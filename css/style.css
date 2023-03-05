@@ -1,0 +1,38 @@
+.inner{
+
+    width:90%;
+    margin: auto;
+  
+}
+.icone{
+    font-size: 20px;
+    padding: 10px;
+    color: red;
+    transition: 0.5s;
+}
+.icones{
+    color: rgb(57, 57, 255);
+}
+.icone:hover
+{
+    color: black;
+}
+#addEdit{
+    display: none;
+}
+.table{
+    border: solid rgb(215, 152, 237) 1px;
+}
+.system{
+    background: linear-gradient(rgb(222, 177, 239),rgb(233, 211, 242),rgb(253, 253, 253));
+}
+.form-control:focus,.form-select:focus{
+ border:none !important;
+ box-shadow: 0 0 8px rgb(176, 11, 231) !important;
+}
+
+input,textarea,select{
+    
+    border:solid rgb(215, 152, 237) 1px !important ;
+    background-color:rgb(247, 245, 249) !important ;
+}

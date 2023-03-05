@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+<div class="system">
+    <div class="inner py-5">
+        <h1 class="text-center ">Mangment System</h1>
+        <div class="row py-4">
+            <div class="col-md-4">
+                <label class="mb-1" for="inputNameProduct">Name Product:</label>
+                <input type="text" onkeyup="validation()" id="inputNameProduct" class="form-control mb-4">
+    
+                <label class="mb-1" for="inputPriceProduct">Price Product:</label>
+                <input type="number" id="inputPriceProduct" class="form-control mb-4">
+    
+                <label class="mb-1" for="inputcatogryProduct">catogry Product:</label>
+                <select class="form-select mb-4" id="inputcatogryProduct" >
+                    <option value="Tv">Tv</option>
+                    <option value="Labtop">Labtop</option>
+                    <option value="ipad">ipad</option>
+                    <option value="Mobail">Mobail</option>
+                   
+                </select>
+    
+                <label class="mb-1" for="inputdescraptionProduct">descraption Product:</label>
+                <textarea type="text" id="inputdescraptionProduct" class="form-control mb-4"></textarea> 
+                <button onclick="Addproduct()" class="btn btn-outline-danger me-1" id="addbtn">Add Product</button>
+                <button onclick="addEdit()" class="btn btn-outline-danger  me-1" id="addEdit">Add Edit</button>
+                <button onclick="clearForm()" class="btn btn-outline-info">Clear Form</button>
+               
+            </div>
+            <div class="col-md-8">
+                
+                <input type="text" id="inputSearch" onkeyup="searchproduct()" placeholder="    Search in Table..." class="form-control mb-4 mt-4">
+               <table class="table table-striped text-center ">
+                <thead>
+                    <th  class="mb-5">
+                        Index
+                    </th>
+                    <th class="mb-5">
+                        Name
+                    </th>
+                    <th class="mb-5">
+                        Price
+                    </th>
+                    <th class="mb-5">
+                        catogry
+                    </th>
+                    <th class="mb-5">
+                        descraption
+                    </th>
+                    <th class="mb-5">
+                      update 
+                    </th>
+                    <th class="mb-5">
+                        delete 
+                      </th>
+                </thead>
+                <tbody id="tablebody">
+                  
+                    
+                </tbody>
+               </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
